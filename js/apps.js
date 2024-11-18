@@ -33,7 +33,7 @@ class Persona {
             rasgoCaracteristico = 'Desconocido';
         }
 
-        return `La persona pertenece a la ${generacion} y su rasgo característico es ${rasgoCaracteristico}.`;
+        return La persona pertenece a la ${generacion} y su rasgo característico es ${rasgoCaracteristico}.;
     }
 
     esMayorDeEdad() {
@@ -54,7 +54,7 @@ class Persona {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    let persona;
+    let persona;  // Aseguramos que la variable persona esté en el alcance de la función
 
     document.getElementById('crear-persona').addEventListener('click', function() {
         const nombre = document.getElementById('nombre').value;
@@ -65,8 +65,12 @@ document.addEventListener('DOMContentLoaded', function() {
         const altura = parseFloat(document.getElementById('altura').value);
         const anioNacimiento = parseInt(document.getElementById('anio-nacimiento').value);
 
+        // Creamos la instancia de persona con los datos ingresados
         persona = new Persona(nombre, edad, dni, sexo, peso, altura, anioNacimiento);
         alert('Persona creada exitosamente');
+
+        // Limpiamos el formulario
+        document.getElementById('form-persona').reset();
     });
 
     document.getElementById('mostrar-generacion').addEventListener('click', function() {

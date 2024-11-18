@@ -12,15 +12,15 @@
     <title>Formulario Persona</title>
 </head>
 <body>
-    <h1 class="text-center">Crear persona</h1>
+    <h1 class="text-center text-primary">Crear clase persona</h1>
     <section class="container">
     <form id="personaForm">
         <div class="mt-4">
-            <label for="nombre">Nombre:</label>
+            <label for="nombre">NOMBRE:</label>
             <input type="text" id="nombre" required>
         </div>
         <div class="mt-4">
-            <label for="edad">Edad:</label>
+            <label for="edad">EDAD:</label>
             <input type="number" id="edad" required>
         </div>
         <div class="mt-4">
@@ -28,31 +28,31 @@
             <input type="text" id="dni" required>
         </div>
         <div class="mt-4">
-            <label for="sexo">Sexo:</label>
+            <label for="sexo">GENERO:</label>
             <select id="sexo">
                 <option value="H">Hombre</option>
                 <option value="M">Mujer</option>
             </select>
         </div>
         <div class="mt-4">
-            <label for="peso">Peso (kg):</label>
+            <label for="peso">PESO (kg):</label>
             <input type="number" id="peso" required>
         </div>
         <div class="mt-4">
-            <label for="altura">Altura (m):</label>
-            <input type="number" step="0.01" id="altura" required><br>
+            <label for="altura">ALTURA (m):</label>
+            <input type="number" step="0.01" id="altura" required>
         </div>
         <div class="mt-4">
-            <label for="añoNacimiento">Año de Nacimiento:</label>
+            <label for="añoNacimiento">AÑO DE NACIMIENTO:</label>
             <input type="number" id="añoNacimiento" required>
         </div>
         <div class="mt-4">
-            <button class="btn btn-danger" type="button" onclick="crearPersona()">Crear Persona</button>
+            <button class="btn btn-danger" type="button" onclick="crearPersona()">CREAR</button>
         </div>
     </form>
     <div class="mt-4">
         <button class="btn btn-warning" onclick="mostrarGeneracion()">Mostrar Generación</button>
-        <button class="btn btn-warning mx-3" onclick="esMayorDeEdad()">Es Mayor de Edad</button>   
+        <button class="btn btn-warning mx-3" onclick="esMayorDeEdad()">¿Es Mayor de Edad?</button>   
         <button class="btn btn-warning mx-3" onclick="mostrarDatos()">Mostrar Datos</button> 
     </div>
 
